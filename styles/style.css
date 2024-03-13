@@ -19,3 +19,11 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.input-group-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+textarea {
+  width: 100%;
+}
