@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 48.2px;
+    background-color: silver;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+main {
+    width: 800px;
+    margin-top: 50px;
+    padding-left: 25%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imgMain {
+    width: 170px;
+    height: 170px;
+}
+
+.img-top {
+    border-radius: 50%;
+}
+
+hr {
+    color: blue;
+    width: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-list1>div:first-child {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.edit {
+    width: 80px;
+    height: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.commit {
+    width: 60px;
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.main-list1>div:last-child a {
+    margin: 5px;
+}
+
+.main-list1>div:nth-child(2) a {
+    color: white;
+    background-color: blue;
+}
+
+.main-list1>div:nth-child(2) a:hover {
+    color: blue;
+    background-color: silver;
+    transition: 0.2s;
+}
+
+.main-list1>div:nth-child(2) {
+    margin-top: 20px;
+}
+
+nav div {
+    color: blue;
+    font-size: 20px;
+    width: 20px;
+    height: 25px;
+    border: 2px solid blue;
+    background-color: white;
+    padding: 10px 15px;
+}
+
+main>div:first-child {
+    display: flex;
+}
+
+.main-list1 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 25px 50px;
+}
+
+.main-list1>div:nth-child(2) {
+    display: flex;
+    margin-left: -5px;
+}
+
+.bio-main {
+    display: flex;
+    margin: 20px 0;
+}
+
+.bio-main a {
+    color: white;
+}
+
+.main-footer {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    /* left: 150px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.bio {
+    width: 140px;
+    height: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: blue;
+}
+
+.teq {
+    width: 140px;
+    height: 30px;
+    padding: 5px 15px;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: blue;
+}
+
+.cv {
+    width: 140px;
+    height: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: blue;
+}
+
+.bio:hover,
+.cv:hover,
+.teq:hover {
+    color: blue;
+    background-color: silver;
+    transition: 0.2s;
+}
+
+.plus-minus {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plus-minus a {
+    color: blue;
+    font-size: 25px;
+}
+
+.images {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.images div {
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+}
+
+footer {
+    width: 250px;
+    height: 100%;
+    border: 1px solid blue;
+    background-color: blue;
+    position: fixed;
+    left: 0;
+    top: 48px;
+}
+
+footer {
+    width: 20%;
+}
+
+footer div {
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+footer>div:first-child {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+footer a {
+    color: white;
+    font-size: 20px;
+}
+
+footer>div:last-child div {
+    width: 20px;
+    height: 25px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    color: white;
+}
+
+footer>div:last-child div:hover {
+    background-color: silver;
+    color: blue;
+    transition: 0.2s;
+}
+
+.footer {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+
+    main {
+        width: 100%;
+        padding-left: 20px;
+        /* margin-left: 45px; */
+    }
+
+    .images {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 25px;
+    }
+
+    .images div {
+        width: 140px;
+        height: 100px;
+    }
+
+    .imgMain {
+        width: 100px;
+        height: 100px;
+    }
+
+    .images div {
+        margin: 0;
+        padding: 5px;
+    }
+
+    .teq,
+    .bio,
+    .cv {
+        width: 80px;
+        margin: 25%;
+    }
+
+    .bio-main {
+        margin-left: -20px;
+        margin-top: -30px;
+    }
+
+    .main-list1 {
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .edit {
+        width: 80px;
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+    .star {
+        width: 20px;
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+    .commit {
+        width: 50px;
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+    .main-list1>div:first-child {
+        font-size: 25px;
+        margin-bottom: -10px;
+    }
+
+    .plus-minus {
+        width: 350px;
+    }
+
+    hr {
+        width: 350px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .footer {
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .footer {
+        width: 250px;
+        height: 50px;
+        border: 1px solid blue;
+        background-color: blue;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer div {
+        margin-left: 5px;
+        margin-top: 18px;
+    }
+
+    .footer>div {
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        font-family: inherit;
+    }
+
+    .footer a {
+        color: white;
+        font-size: 20px;
+    }
+
+   
+}
