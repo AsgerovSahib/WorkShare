@@ -17,19 +17,30 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="filter.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <header>
+      <div class="head">
+        <img src="./img/WhatsApp Image 2024-03-13 at 10.27.24.jpeg" alt="logo" />
+        <h2>Brilyant Suleymanova</h2>
+      </div>
+    </header>
     <div class="container">
       <div class="employer">
-        <button class="employerBox1">İŞÇİ</button>
-        <button class="employerBox1">İŞ</button>
+        <button class="employerBox1"><a href="filter.html">İŞÇİ</a></button>
+        <button class="employerBox1"><a href="index2.html">İŞ</a></button>
       </div>
 
       <input type="text" placeholder="Axtar" class="search" />
 
       <div class="filter">
-        <button onclick="toggleCategory()">Filter</button>
+        <button onclick="toggleCategory()" style="background-color: blue; color: white;">Filter</button>
         <div class="filterButton">
           <div class="dropdown">
             <a
@@ -38,6 +49,7 @@
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              style="background-color: blue;"
             >
               <i class="fa-solid fa-filter"></i>
             </a>
@@ -89,10 +101,25 @@
           <option value="#">Kişi</option>
           <option value="#">Qadın</option>
         </select>
-        <a href="search.html"> <button>Axtar</button></a>
+        <a href="search.html"> <button style="background-color: blue; color: white;">Axtar</button></a>
       </div>
-    </div>
 
+    </div>
+  <div class="footer"
+        style="margin-top: 370px; ">
+        <a href="./index.html">
+          <div><i class="fa-solid fa-user"></i></div>
+        </a>
+        <a href="./filter.html">
+          <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        </a>
+        <a href="./index2.html">
+          <div><i class="fa-solid fa-plus"></i></div>
+        </a>
+        <a href="../dm.html">
+          <div><i class="fa-solid fa-envelope"></i></div>
+        </a>
+      </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-rKxx3hh8sFH9SfSs2JR1W6ZPM2GctK8r6aDIJYbWeqnjvDBHci2i1g5vub3fQz/"
